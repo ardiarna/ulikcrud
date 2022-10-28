@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>264161846436-87jp1f7na6thh0tjnl54hn907se22soi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.264161846436-87jp1f7na6thh0tjnl54hn907se22soi</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDMKANvknZOdhX9V_B_siR_X7vWjlo8UV4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>264161846436</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ufe.ulikcrud</string>
+	<key>PROJECT_ID</key>
+	<string>ulik-crud</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ulik-crud.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:264161846436:ios:6f1f57b74acfbff4197231</string>
+	<key>DATABASE_URL</key>
+	<string>https://ulik-crud-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>
