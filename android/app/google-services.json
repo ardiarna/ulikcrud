@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "264161846436",
+    "firebase_url": "https://ulik-crud-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ulik-crud",
+    "storage_bucket": "ulik-crud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264161846436:android:31a56484c3add86b197231",
+        "android_client_info": {
+          "package_name": "com.ufe.ulikcrud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264161846436-uhjl02c7ovo50pov4ii0s6floek573tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6sy9sS91Ld9m2JWYIagFqFKIckUPlxe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264161846436-uhjl02c7ovo50pov4ii0s6floek573tn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "264161846436-87jp1f7na6thh0tjnl54hn907se22soi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ufe.ulikcrud"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

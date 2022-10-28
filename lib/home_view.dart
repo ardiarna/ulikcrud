@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -12,8 +13,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String _listenAwal = "";
   String _tanggal = "";
+  String _tokenMessage = "";
 
-  Future<void> testingFirebase() async {
+  Future<void> _testingFirebase() async {
     final ref = FirebaseDatabase.instance.ref();
     final snapshot = await ref.child('laporan').get();
     if (snapshot.exists) {
@@ -40,7 +42,16 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    testingFirebase();
+    _testingFirebase();
+
+    FirebaseMessaging.instance.getToken().then((value) {
+      if(value != null) {
+        setState(() {
+          _tokenMessage = value;
+        });;
+      }
+    });
+
     FirebaseDatabase.instance.ref('laporan').onValue.listen((DatabaseEvent event) {
       if(_listenAwal == "1") {
         if(event.snapshot.value != null) {
@@ -62,14 +73,17 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Text("Ulik CRUD - Testing Firebase"),
       ),
-      body: Center(
-        child: Text(_tanggal,
-        ),
+      body: Column(
+        children: [
+          Text("Tanggal dari Realtime Database : $_tanggal"),
+          Text("Token : $_tokenMessage"),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           print("nayla");
-          await testingFirebase();
+          print(_tokenMessage);
+          await _testingFirebase();
           print("naswa");
         },
         child: const Icon(Icons.add),
