@@ -52,6 +52,10 @@ class _MyHomePageState extends State<MyHomePage> {
       }
     });
 
+    FirebaseMessaging.onMessage.listen((message) async {
+      print("ada message fcm ${message.notification!.title}");
+    });
+
     FirebaseDatabase.instance.ref('laporan').onValue.listen((DatabaseEvent event) {
       if(_listenAwal == "1") {
         if(event.snapshot.value != null) {
